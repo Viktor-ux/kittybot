@@ -40,11 +40,13 @@ def get_new_image():
 
 
 def new_cat(update, context):
+    """Отправляет в чат котика."""
     chat = update.effective_chat
     context.bot.send_photo(chat.id, get_new_image())
 
 
 def wake_up(update, context):
+    """Функция с командой."""
     chat = update.effective_chat
     name = update.message.chat.first_name
     button = ReplyKeyboardMarkup([['/newcat']], resize_keyboard=True)
@@ -59,6 +61,7 @@ def wake_up(update, context):
 
 
 def main():
+    """Основная логика работы бота."""
     updater = Updater(token=secret_token)
 
     updater.dispatcher.add_handler(CommandHandler('start', wake_up))
