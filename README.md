@@ -1,2 +1,9 @@
-# kittybot
-Telegram bot for sending photos of cats or dogs. Very calming to the nerves
+# Kittybot
+## Стек технологий:
+- PythonTelegramBot
+- Dotenv
+## Что умеет делать бот:
+-Отправлять фото кошечки или собачки
+
+## Автор:
+Феоктистов Виктор
